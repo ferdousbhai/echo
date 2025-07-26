@@ -1,0 +1,48 @@
+{
+  "name": "echo",
+  "description": "Terminal-based secure chat application",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "echo": "./src/tui.tsx"
+  },
+  "scripts": {
+    "dev:tui": "tsx src/tui.tsx",
+    "dev:backend": "convex dev",
+    "build": "tsc && convex deploy",
+    "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false"
+  },
+  "dependencies": {
+    "@convex-dev/auth": "^0.0.80",
+    "convex": "^1.24.2",
+    "ink": "^6.0.1",
+    "ink-big-text": "^2.0.0",
+    "ink-box": "^1.0.0",
+    "ink-gradient": "^3.0.0",
+    "ink-select-input": "^6.2.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.1.0",
+    "tsx": "^4.20.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.1.8",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.21.0",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.3",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1"
+  },
+  "keywords": [
+    "terminal",
+    "chat",
+    "tui",
+    "secure",
+    "encrypted",
+    "convex"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
